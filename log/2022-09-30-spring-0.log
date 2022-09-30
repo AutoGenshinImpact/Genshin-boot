@@ -1,0 +1,228 @@
+2022-09-30 00:00:00.800  INFO 32720 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 32720 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 00:00:00.804  INFO 32720 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 00:00:01.568  INFO 32720 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 00:00:01.569  INFO 32720 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 00:00:01.582  INFO 32720 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 00:00:01.582  INFO 32720 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 00:00:01.833  INFO 32720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 00:00:01.836  INFO 32720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 00:00:01.880  INFO 32720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2022-09-30 00:00:02.504  INFO 32720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 00:00:02.513  INFO 32720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 00:00:02.513  INFO 32720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 00:00:02.979  INFO 32720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 00:00:02.979  INFO 32720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2127 ms
+2022-09-30 00:00:03.251  INFO 32720 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 00:00:03.432  INFO 32720 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 00:00:03.488  INFO 32720 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 00:00:03.491  INFO 32720 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 00:00:03.491  INFO 32720 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 00:00:03.501  INFO 32720 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 00:00:03.534  INFO 32720 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 00:00:04.185  INFO 32720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10a907ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59b492ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fe46d52, org.springframework.security.web.header.HeaderWriterFilter@74123110, org.springframework.web.filter.CorsFilter@55c1ced9, org.springframework.security.web.authentication.logout.LogoutFilter@6aff97d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a109ff7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21f9c6ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cfb8e98, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@78b0ec3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49cc9b2a, org.springframework.security.web.session.SessionManagementFilter@79ab97fd, org.springframework.security.web.access.ExceptionTranslationFilter@3111631d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cdb156]
+2022-09-30 00:00:04.256  INFO 32720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 00:00:04.463  INFO 32720 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 4.261 seconds (JVM running for 7.744)
+2022-09-30 00:00:10.089  INFO 32720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 00:00:10.091  INFO 32720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 00:00:10.092  INFO 32720 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 00:00:00 CST 2022] 被注册
+2022-09-30 00:00:10.093  INFO 32720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-30 00:00:20.886  INFO 32720 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-30 00:00:21.298  INFO 32720 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-30 00:00:21.642  INFO 32720 --- [http-nio-8080-exec-5] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:00:21.645  INFO 32720 --- [http-nio-8080-exec-5] c.e.controller.listener.ContextListener  : ServletContext:属性: [sessions],Value: [{}] 被注册
+2022-09-30 00:00:21.646  INFO 32720 --- [http-nio-8080-exec-5] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:04:08.743  INFO 32720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-30 00:04:08.875  INFO 32720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-30 00:04:19.581  INFO 47524 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 47524 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 00:04:19.584  INFO 47524 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 00:04:20.326  INFO 47524 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 00:04:20.328  INFO 47524 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 00:04:20.329  INFO 47524 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 00:04:20.329  INFO 47524 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 00:04:20.574  INFO 47524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 00:04:20.577  INFO 47524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 00:04:20.625  INFO 47524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2022-09-30 00:04:21.291  INFO 47524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 00:04:21.298  INFO 47524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 00:04:21.298  INFO 47524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 00:04:21.787  INFO 47524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 00:04:21.787  INFO 47524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2154 ms
+2022-09-30 00:04:22.062  INFO 47524 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 00:04:22.236  INFO 47524 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 00:04:22.293  INFO 47524 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 00:04:22.295  INFO 47524 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 00:04:22.295  INFO 47524 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 00:04:22.305  INFO 47524 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 00:04:22.338  INFO 47524 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 00:04:23.017  INFO 47524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e4eda17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b5021d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@414b2df5, org.springframework.security.web.header.HeaderWriterFilter@1282e98, org.springframework.web.filter.CorsFilter@6befbb12, org.springframework.security.web.authentication.logout.LogoutFilter@5f193335, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8f2e3e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b30a54e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c7d7430, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@24e5389c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21d9cd04, org.springframework.security.web.session.SessionManagementFilter@1d91fa02, org.springframework.security.web.access.ExceptionTranslationFilter@50122012, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3915e7c3]
+2022-09-30 00:04:23.093  INFO 47524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 00:04:23.348  INFO 47524 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 4.367 seconds (JVM running for 7.986)
+2022-09-30 00:04:24.946  INFO 47524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 00:04:24.946  INFO 47524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 00:04:24.948  INFO 47524 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 00:04:19 CST 2022] 被注册
+2022-09-30 00:04:24.948  INFO 47524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-30 00:04:50.828  INFO 47524 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-30 00:04:51.211  INFO 47524 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-30 00:04:51.553  INFO 47524 --- [http-nio-8080-exec-3] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:04:51.557  INFO 47524 --- [http-nio-8080-exec-3] c.e.controller.listener.ContextListener  : ServletContext:属性: [sessions],Value: [{}] 被注册
+2022-09-30 00:04:51.557  INFO 47524 --- [http-nio-8080-exec-3] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:05:35.488  INFO 47524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-30 00:05:35.497  INFO 47524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-30 00:05:45.112  INFO 16924 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 16924 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 00:05:45.115  INFO 16924 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 00:05:45.864  INFO 16924 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 00:05:45.865  INFO 16924 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 00:05:45.866  INFO 16924 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 00:05:45.866  INFO 16924 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 00:05:46.098  INFO 16924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 00:05:46.100  INFO 16924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 00:05:46.141  INFO 16924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2022-09-30 00:05:46.734  INFO 16924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 00:05:46.742  INFO 16924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 00:05:46.743  INFO 16924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 00:05:47.164  INFO 16924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 00:05:47.165  INFO 16924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2003 ms
+2022-09-30 00:05:47.442  INFO 16924 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 00:05:47.648  INFO 16924 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 00:05:47.713  INFO 16924 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 00:05:47.715  INFO 16924 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 00:05:47.716  INFO 16924 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 00:05:47.726  INFO 16924 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 00:05:47.761  INFO 16924 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 00:05:48.380  INFO 16924 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10a907ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59b492ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fe46d52, org.springframework.security.web.header.HeaderWriterFilter@74123110, org.springframework.web.filter.CorsFilter@55c1ced9, org.springframework.security.web.authentication.logout.LogoutFilter@6aff97d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a109ff7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21f9c6ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cfb8e98, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@78b0ec3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49cc9b2a, org.springframework.security.web.session.SessionManagementFilter@79ab97fd, org.springframework.security.web.access.ExceptionTranslationFilter@3111631d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cdb156]
+2022-09-30 00:05:48.448  INFO 16924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 00:05:48.651  INFO 16924 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 4.112 seconds (JVM running for 7.814)
+2022-09-30 00:05:56.477  INFO 16924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 00:05:56.478  INFO 16924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 00:05:56.480  INFO 16924 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 00:05:45 CST 2022] 被注册
+2022-09-30 00:05:56.481  INFO 16924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-30 00:06:04.758  INFO 16924 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-30 00:06:05.085  INFO 16924 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-30 00:06:05.663  INFO 16924 --- [http-nio-8080-exec-3] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:06:05.665  INFO 16924 --- [http-nio-8080-exec-3] c.e.controller.listener.ContextListener  : ServletContext:属性: [sessions],Value: [{}] 被注册
+2022-09-30 00:06:05.666  INFO 16924 --- [http-nio-8080-exec-3] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:09:42.989  INFO 16924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-30 00:09:42.997  INFO 16924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-30 00:09:52.772  INFO 25220 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 25220 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 00:09:52.775  INFO 25220 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 00:09:53.641  INFO 25220 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 00:09:53.642  INFO 25220 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 00:09:53.644  INFO 25220 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 00:09:53.644  INFO 25220 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 00:09:53.895  INFO 25220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 00:09:53.897  INFO 25220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 00:09:53.943  INFO 25220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2022-09-30 00:09:54.586  INFO 25220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 00:09:54.594  INFO 25220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 00:09:54.594  INFO 25220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 00:09:55.036  INFO 25220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 00:09:55.036  INFO 25220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2196 ms
+2022-09-30 00:09:55.326  INFO 25220 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 00:09:55.504  INFO 25220 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 00:09:55.562  INFO 25220 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 00:09:55.564  INFO 25220 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 00:09:55.565  INFO 25220 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 00:09:55.575  INFO 25220 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 00:09:55.606  INFO 25220 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 00:09:56.195  INFO 25220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55c1ced9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49cc9b2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@21f9c6ea, org.springframework.security.web.header.HeaderWriterFilter@79ab97fd, org.springframework.web.filter.CorsFilter@11826398, org.springframework.security.web.authentication.logout.LogoutFilter@134a8ead, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a2773a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dfd7eaa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19002b34, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4f213a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c5ca0b6, org.springframework.security.web.session.SessionManagementFilter@5fe46d52, org.springframework.security.web.access.ExceptionTranslationFilter@4c7d7430, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ae8fb2a]
+2022-09-30 00:09:56.263  INFO 25220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 00:09:56.490  INFO 25220 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 4.317 seconds (JVM running for 7.767)
+2022-09-30 00:10:53.739  INFO 25220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 00:10:53.740  INFO 25220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 00:10:53.743  INFO 25220 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 00:09:52 CST 2022] 被注册
+2022-09-30 00:10:53.743  INFO 25220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-30 00:11:06.111  INFO 25220 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-30 00:11:06.525  INFO 25220 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-30 00:11:06.834  INFO 25220 --- [http-nio-8080-exec-9] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 00:11:06.837  INFO 25220 --- [http-nio-8080-exec-9] c.e.controller.listener.ContextListener  : ServletContext:属性: [sessions],Value: [{}] 被注册
+2022-09-30 00:11:06.837  INFO 25220 --- [http-nio-8080-exec-9] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 01:59:59.869  INFO 25220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-30 01:59:59.879  INFO 25220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-30 13:46:56.420  INFO 8592 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 8592 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 13:46:56.424  INFO 8592 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 13:46:57.556  INFO 8592 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 13:46:57.559  INFO 8592 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 13:46:57.561  INFO 8592 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 13:46:57.561  INFO 8592 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 13:46:58.118  INFO 8592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 13:46:58.124  INFO 8592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 13:46:58.241  INFO 8592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 0 Redis repository interfaces.
+2022-09-30 13:46:59.745  INFO 8592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 13:46:59.763  INFO 8592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 13:46:59.764  INFO 8592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 13:47:00.949  INFO 8592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 13:47:00.950  INFO 8592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4461 ms
+2022-09-30 13:47:01.703  INFO 8592 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 13:47:02.189  INFO 8592 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 13:47:02.310  INFO 8592 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 13:47:02.314  INFO 8592 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 13:47:02.315  INFO 8592 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 13:47:02.333  INFO 8592 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 13:47:02.387  INFO 8592 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 13:47:03.689  INFO 8592 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59b492ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55c1ced9, org.springframework.security.web.context.SecurityContextPersistenceFilter@448ade1, org.springframework.security.web.header.HeaderWriterFilter@5ed0b4e3, org.springframework.web.filter.CorsFilter@49cc9b2a, org.springframework.security.web.authentication.logout.LogoutFilter@1d60059f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@111a7973, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@418f0534, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f193335, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@46612bfc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11826398, org.springframework.security.web.session.SessionManagementFilter@3a9b41a0, org.springframework.security.web.access.ExceptionTranslationFilter@2d70f312, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b4814d0]
+2022-09-30 13:47:03.841  INFO 8592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 13:47:04.371  INFO 8592 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 8.682 seconds (JVM running for 13.935)
+2022-09-30 13:48:48.031  INFO 8592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 13:48:48.032  INFO 8592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 13:48:48.036  INFO 8592 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 13:46:56 CST 2022] 被注册
+2022-09-30 13:48:48.036  INFO 8592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-09-30 13:54:07.282  INFO 8592 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-30 13:54:07.725  INFO 8592 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-30 13:54:08.009  INFO 8592 --- [http-nio-8080-exec-9] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 13:54:08.011  INFO 8592 --- [http-nio-8080-exec-9] c.e.controller.listener.ContextListener  : ServletContext:属性: [sessions],Value: [{}] 被注册
+2022-09-30 13:54:08.011  INFO 8592 --- [http-nio-8080-exec-9] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 13:57:20.410  INFO 8592 --- [http-nio-8080-exec-9] com.example.service.util.IpTools         : 用户[123456]的真实ip为[127.0.0.1]
+2022-09-30 13:57:47.017  INFO 8592 --- [http-nio-8080-exec-8] com.example.service.util.IpTools         : 用户[lmq122677@qq.com]的真实ip为[127.0.0.1]
+2022-09-30 15:37:07.482 ERROR 8592 --- [Catalina-utility-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Session event listener threw exception
+
+java.lang.IllegalStateException: No thread-bound request found: Are you referring to request attributes outside of an actual web request, or processing a request outside of the originally receiving thread? If you are actually operating within a web request and still receive this message, your code is probably running outside of DispatcherServlet: In this case, use RequestContextListener or RequestContextFilter to expose the current request.
+	at org.springframework.web.context.request.RequestContextHolder.currentRequestAttributes(RequestContextHolder.java:131)
+	at com.example.controller.listener.SessionListener.sessionDestroyed(SessionListener.java:41)
+	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:806)
+	at org.apache.catalina.session.StandardSession.isValid(StandardSession.java:660)
+	at org.apache.catalina.session.ManagerBase.processExpires(ManagerBase.java:609)
+	at org.apache.catalina.session.ManagerBase.backgroundProcess(ManagerBase.java:592)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5622)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-09-30 17:32:09.237  INFO 8592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-30 17:32:09.244  INFO 8592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-30 17:32:22.766  INFO 36884 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 36884 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-30 17:32:22.769  INFO 36884 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-30 17:32:23.584  INFO 36884 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-30 17:32:23.585  INFO 36884 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-30 17:32:23.586  INFO 36884 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-30 17:32:23.586  INFO 36884 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-30 17:32:23.820  INFO 36884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:32:23.822  INFO 36884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:32:23.869  INFO 36884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:32:24.483  INFO 36884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-30 17:32:24.494  INFO 36884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-30 17:32:24.494  INFO 36884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:32:24.980  INFO 36884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-30 17:32:24.980  INFO 36884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2164 ms
+2022-09-30 17:32:25.239  INFO 36884 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-30 17:32:25.393  INFO 36884 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-30 17:32:25.449  INFO 36884 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-30 17:32:25.451  INFO 36884 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-30 17:32:25.451  INFO 36884 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-30 17:32:25.463  INFO 36884 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-30 17:32:25.495  INFO 36884 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-30 17:32:26.060  INFO 36884 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11826398, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c5ca0b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dfd7eaa, org.springframework.security.web.header.HeaderWriterFilter@5fe46d52, org.springframework.web.filter.CorsFilter@37b01ce2, org.springframework.security.web.authentication.logout.LogoutFilter@54247647, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46612bfc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@133aacbe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e6748ae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5a47730c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a88c4f5, org.springframework.security.web.session.SessionManagementFilter@21f9c6ea, org.springframework.security.web.access.ExceptionTranslationFilter@74123110, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20216016]
+2022-09-30 17:32:26.122  INFO 36884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 17:32:26.299  INFO 36884 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 4.121 seconds (JVM running for 7.289)
+2022-09-30 17:37:23.805  INFO 36884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 17:37:23.805  INFO 36884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-30 17:37:23.807  INFO 36884 --- [http-nio-8080-exec-1] c.e.controller.listener.ContextListener  : ServletContext:属性: [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet],Value: [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@909217e, started on Fri Sep 30 17:32:22 CST 2022] 被注册
+2022-09-30 17:37:23.808  INFO 36884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

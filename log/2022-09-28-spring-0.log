@@ -1,0 +1,24 @@
+2022-09-28 23:52:56.444  INFO 24168 --- [main] com.example.GenshinApplication           : Starting GenshinApplication using Java 1.8.0_312 on LAPTOP-251907QD with PID 24168 (D:\泽泽子文件\文档\java\Genshin\target\classes started by 泽泽子 in D:\泽泽子文件\文档\java\Genshin)
+2022-09-28 23:52:56.447  INFO 24168 --- [main] com.example.GenshinApplication           : The following 1 profile is active: "dev"
+2022-09-28 23:52:57.328  INFO 24168 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ExceptionFilter success
+2022-09-28 23:52:57.329  INFO 24168 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ExceptionFilter to bean factory
+2022-09-28 23:52:57.331  INFO 24168 --- [main] c.example.config.WebFilterAutoRegister   : register WebFilter com.example.controller.filter.ThreadInitFilter success
+2022-09-28 23:52:57.331  INFO 24168 --- [main] c.example.config.WebFilterAutoRegister   : register web filter com.example.controller.filter.ThreadInitFilter to bean factory
+2022-09-28 23:52:57.614  INFO 24168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-28 23:52:57.617  INFO 24168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-28 23:52:57.670  INFO 24168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2022-09-28 23:52:58.335  INFO 24168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-28 23:52:58.344  INFO 24168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-28 23:52:58.345  INFO 24168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-28 23:52:58.819  INFO 24168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-28 23:52:58.819  INFO 24168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2321 ms
+2022-09-28 23:52:59.161  INFO 24168 --- [main] com.example.config.RedisTokenRepository  : 存储Spring-RememberMe缓存的Redis配置加载
+2022-09-28 23:52:59.422  INFO 24168 --- [main] c.example.config.SecurityConfiguration   : CorsFilter跨域过滤器启用
+2022-09-28 23:52:59.488  INFO 24168 --- [main] c.e.controller.listener.ContextListener  : ServletContext被初始化,ServerInfo:[Apache Tomcat/9.0.65]
+2022-09-28 23:52:59.491  INFO 24168 --- [main] c.e.controller.filter.ExceptionFilter    : 异常拦截器启用
+2022-09-28 23:52:59.491  INFO 24168 --- [main] c.e.controller.filter.ThreadInitFilter   : 线程初始化拦截器启用
+2022-09-28 23:52:59.504  INFO 24168 --- [main] c.e.c.RedisMybatisCacheConfiguration     : 存储Mybatis缓存的Redis配置加载
+2022-09-28 23:52:59.555  INFO 24168 --- [main] c.e.c.filter.OverallExceptionHandler     : 全局异常拦截器启用
+2022-09-28 23:53:00.358  INFO 24168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f0ce0d1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664db2ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@26a4f9ed, org.springframework.security.web.header.HeaderWriterFilter@7af1d072, org.springframework.web.filter.CorsFilter@1491cd6c, org.springframework.security.web.authentication.logout.LogoutFilter@2674d4f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3751acd7, org.springframework.security.web.session.ConcurrentSessionFilter@11826398, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45287377, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63f9ddf9, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@63124022, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@423f8a73, org.springframework.security.web.session.SessionManagementFilter@642c6461, org.springframework.security.web.access.ExceptionTranslationFilter@799f354a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ee92e7d]
+2022-09-28 23:53:00.487  INFO 24168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-28 23:53:00.846  INFO 24168 --- [main] com.example.GenshinApplication           : Started GenshinApplication in 5.027 seconds (JVM running for 9.595)
