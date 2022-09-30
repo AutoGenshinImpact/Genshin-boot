@@ -73,10 +73,13 @@ public class MijingServiceImpl implements MijingService {
     }
 
     @Override
-    public int checkIsFinish() {
+    public String checkIsFinish() {
         String username = ThreadDetails.getUsername();
-        int isFinish = intRedisTools.getFromRedis(MIJING_IS_START_TOKEN + username, "该脚本已经结束!");
+        String isFinish = redisTools.getFromRedis(MIJING_IS_START_TOKEN + username, "该脚本还在执行!");
         redisTools.deleteFromRedis(MIJING_IS_START_TOKEN + username);
+        //发布发送邮件事件
+
+
         return isFinish;
     }
 }

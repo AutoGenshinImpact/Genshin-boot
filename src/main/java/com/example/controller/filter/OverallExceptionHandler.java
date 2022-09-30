@@ -29,7 +29,7 @@ public class OverallExceptionHandler {
     @ExceptionHandler
     public RestBean<Object> handleException(Exception e) {
         e.printStackTrace();
-        return RestBeanBuilder.builder().code(ResultCode.FAILURE).messageType(RestBeanBuilder.USER_DEFINED).message("发生了未知的错误!请联系管理员!").build().ToRestBean();
+        return RestBeanBuilder.builder().code(ResultCode.FAILURE).messageType(RestBeanBuilder.USER_DEFINED).message("发生了未知的错误!请联系管理员!:"+e.getMessage()).build().ToRestBean();
     }
 
     @ExceptionHandler(AlreadyException.class)

@@ -70,6 +70,7 @@ public class RedisTools<T> {
 
     public void deleteFromRedis(String key) {
         template.expire(key, 0, TimeUnit.SECONDS);
+
     }
 
     public void setHashMapToRedis(String key,HashMap<?,?> value,int time,int type) {

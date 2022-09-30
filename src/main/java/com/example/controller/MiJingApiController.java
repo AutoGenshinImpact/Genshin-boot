@@ -34,8 +34,6 @@ public class MiJingApiController {
     @ApiOperation(value = "储存用户的秘境信息", notes = "将用户的秘境信息储存在mysql")
     @PostMapping("/storeList")
     public RestBean<Object> storeList(@RequestParam(value = "MiJingList") List<Integer> MiJingList,@RequestParam(value = "numberList") List<Integer> numberList) {
-        System.out.println(MiJingList);
-        System.out.println(Arrays.toString(MiJingList.toArray(new Integer[0])));
         return mijingService.storeList((MiJingList.toArray(new Integer[0])),numberList.toArray(new Integer[0]))?
                 RestBeanBuilder.builder().code(ResultCode.STORE_SUCCESS).build().ToRestBean():
                 RestBeanBuilder.builder().code(ResultCode.STORE_FAILURE).build().ToRestBean();
@@ -87,7 +85,7 @@ public class MiJingApiController {
     @ApiOperation(value = "检查用户是否执行完脚本", notes = "从redis查询用户当前是否执行完脚本")
     @GetMapping("/checkIsFinish")
     public RestBean<Object> checkIsFinish() {
-        int isFinish = mijingService.checkIsFinish();
+        String isFinish = mijingService.checkIsFinish();
         return RestBeanBuilder.builder().code(ResultCode.SELECT_SUCCESS).data(isFinish).build().ToRestBean();
     }
 
