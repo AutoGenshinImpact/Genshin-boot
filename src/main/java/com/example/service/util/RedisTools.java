@@ -22,6 +22,8 @@ public class RedisTools<T> {
 
     public final static int SECONDS = 1;
 
+    public final static int DAYS = 2;
+
     @Resource
     RedisTemplate<Object, Object> template;
     @Resource
@@ -65,6 +67,8 @@ public class RedisTools<T> {
             template.expire(key, time, TimeUnit.MINUTES);
         if (type ==SECONDS)
             template.expire(key, time, TimeUnit.SECONDS);
+        if (type ==DAYS)
+            template.expire(key, time, TimeUnit.DAYS);
 
     }
 

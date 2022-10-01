@@ -35,4 +35,6 @@ public interface MijingService {
      * @return 检查用户的脚本是否结束
      */
     String checkIsFinish();
+
+
 }

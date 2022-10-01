@@ -11,8 +11,8 @@ spring:
       matching-strategy: ant_path_matcher  # 修复swagger版本不匹配bug
   mail:
     host: smtp.qq.com
-    username: lmq122677@qq.com
-    password: rgpyxammhfsfjfgc
+    username: 2649289136@qq.com
+    password: ehqetucyknmkdjdf
 
   redis:
     host: r-bp18tyvha4i273d7x4pd.redis.rds.aliyuncs.com

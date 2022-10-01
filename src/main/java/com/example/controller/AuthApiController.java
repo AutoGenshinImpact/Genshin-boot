@@ -9,6 +9,7 @@ import com.example.service.AuthService;
 import com.example.service.VerifyService;
 import com.example.service.util.IpTools;
 import io.swagger.annotations.*;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 import javax.annotation.Resource;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
@@ -132,6 +134,7 @@ public class AuthApiController {
     }
 
 
+    @SneakyThrows
     @ApiImplicitParams({
             @ApiImplicitParam(name = "username", paramType = "query", required = true, dataType = "string", dataTypeClass = String.class, example = "user"),
             @ApiImplicitParam(name = "code", paramType = "query", required = true, dataType = "string", dataTypeClass = String.class, example = "123456"),
@@ -143,7 +146,7 @@ public class AuthApiController {
     })
     @ApiOperation(value = "发起登录请求", notes = "根据用户邮箱和邮箱验证码进行登录")
     @PostMapping("/loginByCode")
-    public RestBean<Object> loginByCode(@RequestParam(value = "username") String username, @RequestParam(value = "code") String code) {
+    public RestBean<Object> loginByCode(HttpServletRequest request,HttpServletResponse response,@RequestParam(value = "username") String username, @RequestParam(value = "code") String code) {
         //先进行验证码核验
         if (!verifyService.doVerify(username, code))
             return RestBeanBuilder.builder().code(ResultCode.VERIFY_WRONG).build().ToRestBean();
@@ -152,6 +155,10 @@ public class AuthApiController {
         UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(username, null,
                 AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_user"));
         securityContext.setAuthentication(token);
+
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login-success");
+        requestDispatcher.forward(request, response);
+
         return RestBeanBuilder.builder().code(ResultCode.LOGIN_SUCCESS).build().ToRestBean();
     }
 }

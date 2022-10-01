@@ -48,6 +48,10 @@ public enum ResultCode {
 
     SELECT_SUCCESS(200,"查询成功!"),
 
+    UNSUBSCRIBE_SUCCESS(200,"退订成功!"),
+
+    RENEW_SUCCESS(200,"续订成功!"),
+
 
 
 
@@ -91,7 +95,11 @@ public enum ResultCode {
 
     STORE_FAILURE(416,"存储失败!!"),
 
-    SELECT_FAILURE(417,"查询失败!!");
+    SELECT_FAILURE(417,"查询失败!!"),
+
+    UNSUBSCRIBE_FAILURE(418,"退订失败!!"),
+
+    RENEW_FAILURE(419,"续订失败!!");
 
 
 
