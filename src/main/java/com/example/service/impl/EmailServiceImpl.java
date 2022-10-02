@@ -1,7 +1,11 @@
 package com.example.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.example.controller.exception.NotExistInMysqlException;
 import com.example.dao.MiJingMapper;
 import com.example.entity.constant.MiJingList;
+import com.example.entity.constant.ThreadDetails;
+import com.example.entity.data.MiJingDetail;
 import com.example.service.EmailService;
 import com.example.service.util.RedisTools;
 import lombok.extern.slf4j.Slf4j;
@@ -41,16 +45,14 @@ public class EmailServiceImpl implements EmailService {
 
     @Override
     public boolean sendEmail(String mail) {
-//        String username = ThreadDetails.getUsername();
-//        MiJingDetail miJingDetail = miJingMapper.selectList(username).orElseThrow(() -> new NotExistInMysqlException("该用户没有储存秘境列表"));
-//        String list = miJingDetail.getList();
-//        String numberList = miJingDetail.getNumberList();
-//        List<Integer> toList = JSON.parseArray(list, Integer.class);
-//        List<Integer> toNumberList = JSON.parseArray(numberList, Integer.class);
-//        List<Object> nameList = toList.stream().map(MiJingList.MiJingMap::get).collect(Collectors.toList());
-        List<Integer> toList = new ArrayList<>(Arrays.asList(1, 18, 3));
-        List<Integer> toNumberList = new ArrayList<>(Arrays.asList(1, 2, 3));
+        String username = ThreadDetails.getUsername();
+        MiJingDetail miJingDetail = miJingMapper.selectList(username).orElseThrow(() -> new NotExistInMysqlException("该用户没有储存秘境列表"));
+        String list = miJingDetail.getList();
+        String numberList = miJingDetail.getNumberList();
+        List<Integer> toList = JSON.parseArray(list, Integer.class);
+        List<Integer> toNumberList = JSON.parseArray(numberList, Integer.class);
         List<Object> nameList = toList.stream().map(MiJingList.MiJingMap::get).collect(Collectors.toList());
+
 
         ArrayList<ArrayList<Object>> allColumnArrayList = new ArrayList<ArrayList<Object>>();
         nameList.forEach(getIndex((item, index) -> {
