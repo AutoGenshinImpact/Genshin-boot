@@ -290,7 +290,7 @@ public class EmailServiceImpl implements EmailService {
                 "                                                style=\"font-size: 12px; -webkit-font-smoothing: subpixel-antialiased; padding: 3px 5px; word-break: break-word;\">\n" +
                 "                                                <p style=\"line-height: 23.8px;\"><font size=\"2\"\n" +
                 "                                                                                      style=\"line-height: 22.1px;\">您好，因为网站可能休眠无法及时提醒，所以冒昧通过邮件提醒您。如果您觉得GenShin脚本的信息对您没有帮助，请<a\n" +
-                "                                                        href=\"\"\n" +
+                "                                                        href=\"https://d1izb3sh3.neiwangyun.net/unsubscribe.html\"\n" +
                 "                                                        rel=\"noopener\" target=\"_blank\"\n" +
                 "                                                        style=\"outline: none; text-decoration-line: none; cursor: pointer; color: rgb(77, 93, 44);\">点击取消退订</a>，我们会标记为暂不关心，后续不会再次提示您。</font>\n" +
                 "                                                </p></td>\n" +
