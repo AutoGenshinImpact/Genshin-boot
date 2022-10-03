@@ -64,17 +64,7 @@ public class MiJingApiController {
         return RestBeanBuilder.builder().code(ResultCode.SELECT_SUCCESS).data(status).build().ToRestBean();
     }
 
-    @ApiResponses({
-            @ApiResponse(code = 200, message = "获取成功"),
-            @ApiResponse(code = 400, message = "获取失败,请查看日志"),
-            @ApiResponse(code = 401, message = "没有权限")
-    })
-    @ApiOperation(value = "检查用户是否正在执行脚本", notes = "从redis查询用户当前是否在执行脚本")
-    @GetMapping("/checkIsStarting")
-    public RestBean<Object> checkIsStarting() {
-        int isStarting = mijingService.checkIsStarting();
-        return RestBeanBuilder.builder().code(ResultCode.SELECT_SUCCESS).data(isStarting).build().ToRestBean();
-    }
+
 
 
     @ApiResponses({
@@ -85,7 +75,7 @@ public class MiJingApiController {
     @ApiOperation(value = "检查用户是否执行完脚本", notes = "从redis查询用户当前是否执行完脚本")
     @GetMapping("/checkIsFinish")
     public RestBean<Object> checkIsFinish() {
-        String isFinish = mijingService.checkIsFinish();
+        boolean isFinish = mijingService.checkIsFinish();
         return RestBeanBuilder.builder().code(ResultCode.SELECT_SUCCESS).data(isFinish).build().ToRestBean();
     }
 

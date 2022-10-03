@@ -34,7 +34,7 @@ public class EmailServiceImpl implements EmailService {
     @Resource
     JavaMailSender javaMailSender;
     @Value("${spring.mail.username}")
-    String username;
+    String sendEmail;
     @Resource
     MiJingMapper miJingMapper;
     @Resource
@@ -69,7 +69,7 @@ public class EmailServiceImpl implements EmailService {
             //注意这里使用的是MimeMessage
             MimeMessage message = javaMailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
-            helper.setFrom(username);
+            helper.setFrom(sendEmail);
             helper.setTo(mail);
             helper.setSubject("[GenShin脚本]您的秘境任务已经完成，请注意查看");
             //第二个参数：格式是否为html
@@ -114,7 +114,6 @@ public class EmailServiceImpl implements EmailService {
         columnList.forEach(column -> {
             allColumn[0] = allColumn[0].concat(column);
         });
-        System.out.println(allColumn[0]);
         return "<div>\n" +
                 "    <div style=\"font-family: &quot;lucida Grande&quot;, Verdana, &quot;Microsoft YaHei&quot;; background: rgb(94, 123, 254); margin: 0px auto; max-width: 600px;\">\n" +
                 "        <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"\n" +

@@ -26,15 +26,12 @@ public interface MijingService {
      */
     String checkStatus();
 
-    /**
-     * @return 检查用户是否正在执行脚本
-     */
-    int checkIsStarting();
+
 
     /**
      * @return 检查用户的脚本是否结束
      */
-    String checkIsFinish();
+    boolean checkIsFinish();
 
 
 }
