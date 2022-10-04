@@ -30,7 +30,7 @@ public class VerifyServiceImpl implements VerifyService{
     public boolean sendVerifyCode(String mail) {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setSubject("[三维四子棋]您的注册验证码");
+            message.setSubject("[GenShin脚本]您的注册验证码");
             Random random = new Random();
             int code = random.nextInt(899999) + 100000;
             template.opsForValue().set(EMAIL_TOKEN_KEY + mail, code);

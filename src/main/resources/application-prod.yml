@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8080
 spring:
   datasource:
     url: jdbc:mysql://rm-2vcit6wbsp183z2a88o.mysql.cn-chengdu.rds.aliyuncs.com:3306/kagobang

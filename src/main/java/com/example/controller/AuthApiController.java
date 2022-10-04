@@ -156,8 +156,9 @@ public class AuthApiController {
                 AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_user"));
         securityContext.setAuthentication(token);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login-success");
-        requestDispatcher.forward(request, response);
+////        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login-success");
+////        requestDispatcher.forward(request, response);
+//        response.sendRedirect(request.getContextPath()+"/login-success");
 
         return RestBeanBuilder.builder().code(ResultCode.LOGIN_SUCCESS).build().ToRestBean();
     }

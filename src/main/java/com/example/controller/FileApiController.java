@@ -25,8 +25,9 @@ public class FileApiController {
     @SneakyThrows
     @GetMapping("/MiJing")
     public void downloadMiJing(HttpServletRequest request, HttpServletResponse response) {
-        String fileName = "environment.txt";
-        try(InputStream resource = Resources.getResourceAsStream("testFile.txt");) {
+        response.reset();
+        String fileName = "environment.zip";
+        try(InputStream resource = Resources.getResourceAsStream("environment.zip");) {
             byte[] buffer = new byte[resource.available()];
 
             response.setContentType("application/force-download");
